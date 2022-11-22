@@ -1,0 +1,8 @@
+Installing requirements:
+    pip install -r requirements.txt
+Invalid test types:
+    Invalid piece position
+    Invalid piece type
+    Invalid color
+    Invalid given Kings
+    invalid (by default)

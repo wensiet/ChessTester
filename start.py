@@ -64,4 +64,6 @@ if __name__ == "__main__":
     m = int(input())
     print("Enter invalid type:")
     inv_type = input()
+    if not inv_type:
+        inv_type = "invalid"
     main(n, m, inv_type=inv_type)
