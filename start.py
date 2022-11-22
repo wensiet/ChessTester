@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 
-def main(n_bound: int, m_bound: int):
+def main(n_bound: int, m_bound: int, inv_type: str = "invalid"):
     test_cases = Tester
     n = n_bound
     m = m_bound
@@ -16,7 +16,7 @@ def main(n_bound: int, m_bound: int):
     file.close()
 
     file = open("../test_i.txt", "w")
-    test_i = test_cases.generate_invalid_test(n, m, invalid_type="Invalid piece position")
+    test_i = test_cases.generate_invalid_test(n, m, invalid_type=inv_type)
     file.write(str(n) + "\n" + str(m) + "\n")
     for c in test_i:
         file.write(f"{c['figure']} {c['color']} {c['pos'][0]} {c['pos'][1]}\n")
@@ -62,4 +62,6 @@ if __name__ == "__main__":
     n = int(input())
     print("Enter m:")
     m = int(input())
-    main(n, m)
+    print("Enter invalid type:")
+    inv_type = input()
+    main(n, m, inv_type=inv_type)
