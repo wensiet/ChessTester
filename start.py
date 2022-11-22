@@ -36,22 +36,22 @@ def main(n_bound: int, m_bound: int, inv_type: str = "invalid"):
         else:
             color = "k"
         if c['figure'] == "King":
-            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♔", color=color, fontsize=25, horizontalalignment='center',
+            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♔", color=color, fontsize=30, horizontalalignment='center',
                      verticalalignment='center')
         elif c['figure'] == "Queen":
-            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♕", color=color, fontsize=25, horizontalalignment='center',
+            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♕", color=color, fontsize=30, horizontalalignment='center',
                      verticalalignment='center')
         elif c['figure'] == "Rook":
-            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♖", color=color, fontsize=25, horizontalalignment='center',
+            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♖", color=color, fontsize=30, horizontalalignment='center',
                      verticalalignment='center')
         elif c['figure'] == "Bishop":
-            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♗", color=color, fontsize=25, horizontalalignment='center',
+            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♗", color=color, fontsize=30, horizontalalignment='center',
                      verticalalignment='center')
         elif c['figure'] == "Knight":
-            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♘", color=color, fontsize=25, horizontalalignment='center',
+            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♘", color=color, fontsize=30, horizontalalignment='center',
                      verticalalignment='center')
         elif c['figure'] == "Pawn":
-            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♙", color=color, fontsize=20, horizontalalignment='center',
+            plt.text(c['pos'][0] - 0.5, c['pos'][1] - 0.5, "♙", color=color, fontsize=30, horizontalalignment='center',
                      verticalalignment='center')
 
     plt.show()

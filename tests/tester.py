@@ -51,7 +51,7 @@ class Tester:
         n = n_bound
         m = m_bound
 
-        if invalid_type == "Invalid piece position":
+        if invalid_type == "Invalid piece position" or invalid_type == "invalid":
             for i in range(m):
                 # generate a random position
                 pos = [randint(1, n) + randint(randint(1, n), n + 10), randint(1, n)]
@@ -126,5 +126,3 @@ class Tester:
                 color = colors[randint(0, 1)]
                 test_list.append({"pos": pos, "figure": figure, "color": color})
             return test_list
-        else:
-            return None
